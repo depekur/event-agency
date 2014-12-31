@@ -223,9 +223,9 @@
 
 @media screen and (max-width: 1440px) {
 	.item {
-		-webkit-flex: 0 0 45%;
-		flex: 0 0 45%;
-		height: 35vw;
+		-webkit-flex: 1 0 32.333%;
+		flex: 1 0 32.333%;
+		-height: 320px;
 
 	}
 
@@ -233,9 +233,9 @@
 
 @media screen and (max-width: 1000px) {
 	.item {
-		-webkit-flex: 1 0 45%;
-		flex: 1 0 45%;
-		height: 50vw;
+		-webkit-flex: 1 0 32.333%;
+		flex: 1 0 32.333%;
+		-height: 320px;
 	}
 	.item,
 	.intro__content {
@@ -245,8 +245,8 @@
 
 @media screen and (max-width: 590px) {
 	.item {
-		-webkit-flex: 0 0 100%;
-		flex: 0 0 100%;
+		-webkit-flex: 0 0 45%;
+		flex: 0 0 45%;
 		height: 60vw;
 	}
 
