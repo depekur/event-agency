@@ -113,12 +113,12 @@ a:focus {
 }
 
 .logo-a img {
-	width: 40%;
+	width: 500px;
 	transition: 0.7s;
 }
 
 .container--open .logo-a img {
-	width: 16%;
+	width: 220px;
 	transition: 0.7s;
 }
 
