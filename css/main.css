@@ -121,3 +121,13 @@ a:focus {
 	width: 16%;
 	transition: 0.7s;
 }
+
+.telephone{
+	position: absolute;
+	bottom: 50px;
+	right: 200px;
+}
+
+.pluso{
+	min-height: 40px;
+}
