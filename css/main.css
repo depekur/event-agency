@@ -123,11 +123,28 @@ a:focus {
 }
 
 .telephone{
-	position: absolute;
-	bottom: 50px;
-	right: 200px;
+	padding-left: 70px;
+
+	display: inline-block;
+	vertical-align: baseline;
+	-position: absolute;
+	-bottom: 50px;
+	-right: 200px;
+
 }
 
-.pluso{
-	min-height: 40px;
+.pluso-custom{
+	position: absolute;
+	bottom: 40px;
+	right: 150px;
+
+}
+.pluso-custom div{
+
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+
+
+
 }
