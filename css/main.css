@@ -14,12 +14,12 @@ body {
 	font-size: 1em;
 	font-family: 'Open Sans', sans-serif;
 
-
+	max-width: 1400px !important;
 
 }
 
 a {
-	color: #36b6dd;
+	color: #dbdbdb;
 	text-decoration: none;
 }
 
@@ -109,16 +109,24 @@ a:focus {
 
 .trigger {
 	margin-top: 0.8em;
-	float: right;
-}
 
+}
+.logo-a {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 999;
+	opacity: 1;
+	transition: 1.5s;
+}
 .logo-a img {
 	width: 500px;
 	transition: 0.6s;
 }
 
-.container--open .logo-a img {
-	width: 220px;
+.container--open .logo-a  {
+	opacity: 0;
+	-width: 220px;
 	transition: 0.6s;
 }
 
@@ -126,17 +134,23 @@ a:focus {
 	padding-left: 70px;
 	font-size: 24px;
 	display: inline-block;
-	vertical-align: baseline;
+	vertical-align: middle;
 	-position: absolute;
 	-bottom: 50px;
 	-right: 200px;
+	list-style: none;
 
 }
 
 .pluso-custom{
-	position: absolute;
-	bottom: 40px;
+	-position: absolute;
+	bottom: 7px;
 	right: 150px;
+	display: inline-block;
+	float: left
+	vertical-align: bottom;
+	-margin-top: 140px; 
+	margin-left: 50px;
 
 }
 .pluso-custom div{
