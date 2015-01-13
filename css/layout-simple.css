@@ -5,7 +5,7 @@
 
 .intro {
 	position: fixed;
-	z-index: 10;
+	z-index: 1;
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
@@ -17,19 +17,25 @@
 }
 
 .container--open .intro {
-	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, 130px, 0);
-	transform: translate3d(0, -100%, 0) translate3d(0, 130px, 0);
+	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, 120px, 0);
+	transform: translate3d(0, -100%, 0) translate3d(0, 120px, 0);
 }
 
 /* Fullscreen image */
 .intro__image {
+	background: url(../img/img/main-malina.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	position: absolute;
 	bottom: 0;
 	min-width: 100%;
 	min-height: 120%;
+	max-width: 1400px;
 	width: auto;
 	height: auto;
-	opacity: 0.8;
+	opacity: 0.7;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 	-webkit-transition: -webkit-transform 0.6s, opacity 0.6s;
@@ -49,6 +55,7 @@
 	position: absolute;
 	bottom: 0;
 	padding: 0.8em;
+
 	width: 100%;
 	font-size: 1.15em;
 	-background: linear-gradient(to top right, 
@@ -57,7 +64,7 @@
 }
 
 .intro__title {
-	margin: 0 0 20px;
+	margin: 30px 0 20px;
 	-font-weight: 900;
 	font-size: 40px;
 	font-family: Futura,sans-serif;
@@ -86,9 +93,9 @@ letter-spacing: 1px;
 /* Trigger button with SVG */
 .trigger {
 	position: absolute;
-	bottom: 30px;
-	right: 30px;
-
+	bottom: -75px;
+	-right: 30px;
+	z-index: 3;
 	-webkit-flex: none;
 	flex: none;
 	overflow: hidden;
@@ -103,8 +110,8 @@ letter-spacing: 1px;
 
 /* Hide the text */
 .trigger span {
-	position: absolute;
-	top: 100%;
+	-position: absolute;
+	-top: 100%;
 }
 
 .icon rect,
@@ -244,7 +251,7 @@ letter-spacing: 1px;
 	}
 	.item,
 	.intro__content {
-		font-size: 0.85em;
+		font-size: 0.95em;
 	}
 .thumb-nav {
 	top: 210px !important;
@@ -254,7 +261,7 @@ letter-spacing: 1px;
 	top: 0 !important;
 	transition: 1s;
 }
-.logo-a img {
+.logo-a  img{
 		width: 370px !important;
 	}
 
@@ -279,7 +286,7 @@ letter-spacing: 1px;
 
 }
 
-@media all and (max-width: 690px) {
+@media all and (max-width: 768px) {
 	.item {
 		-webkit-flex: 0 0 90%;
 		flex: 0 0 90%;
@@ -289,8 +296,8 @@ letter-spacing: 1px;
 	.intro__title {
 		font-size: 2em;
 	}
-	.logo-a img {
-		width: 320px !important;
+	.logo-a  img{
+		width: 220px !important;
 		-position: absolute !important;
 		-top: -300px !important; 
 		-left: 50px;
@@ -298,7 +305,12 @@ letter-spacing: 1px;
 
 	}
 
-
+.trigger {
+	width: 60px;
+	height: 60px;
+	bottom: -50px;
+	right: 20px;
+}
 	.pluso-custom div{
 		margin-bottom: 5px;
 		margin-left: 11px;
@@ -314,8 +326,9 @@ letter-spacing: 1px;
 
 	}
 	.telephone {
-		padding-left: 22px;
+		padding-left: 12px;
 		margin: 0;
+		font-size: 18px;
 	}
 
 
@@ -605,4 +618,10 @@ figcaption h3 {
 	margin: 0;
 	padding: 0;
 	color: #fff;
+}
+
+
+
+.logo-row{
+	margin-top: 20px;
 }

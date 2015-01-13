@@ -108,19 +108,23 @@ a:focus {
 }
 
 .trigger {
-	margin-top: 0.8em;
+	-margin-top: 0.8em;
 
 }
 .logo-a {
-	position: fixed;
-	top: 10px;
-	left: 10px;
-	z-index: 999;
-	opacity: 1;
+	-display: block;
+	-height: 250px ;
+	-width: 500px ;
+	-position: fixed;
+	-top: 10px;
+	-left: 10px;
+	z-index: 2;
+	-opacity: 1;
 	transition: 1.5s;
+	-background: url(../img/img/logo.png) no-repeat;
 }
-.logo-a img {
-	width: 500px;
+.logo-a  {
+	
 	transition: 0.6s;
 }
 
